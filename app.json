@@ -15,8 +15,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/Jisshubot/Jisshu-filter-bot",
-    "repository": "https://github.com/Jisshubot/Jisshu-filter-bot",
+    "website": "https://github.com/MonarchXshubham/momo-khayega",
+    "repository": "https://github.com/MonarchXshubham/momo-khayega",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
