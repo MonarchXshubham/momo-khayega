@@ -172,10 +172,12 @@ async def start(client, message):
                     InlineKeyboardButton('• ᴛʀᴇɴᴅɪɴɢ •', callback_data='trending'),
                     InlineKeyboardButton('• ʀᴇꜰᴇʀ •', callback_data='reffff'),
                     InlineKeyboardButton('• ᴍᴏꜱᴛ ꜱᴇᴀʀᴄʜ •', callback_data='mostsearch')
-                  ],[
+                ],[
+                    InlineKeyboardButton('• ᴊᴏɪɴ ᴏᴜʀ ᴀʟʟ ᴄʜᴀɴɴᴇʟꜱ ᴀɴᴅ ɢʀᴏᴜᴘ •', callback_data='channels')
+                ],[
                     InlineKeyboardButton('• ᴘʀᴇᴍɪᴜᴍ •', callback_data='seeplans'),
                     InlineKeyboardButton('• ᴀʙᴏᴜᴛ •', callback_data='about')
-                  ]]
+                ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
         current_time = datetime.now(pytz.timezone(TIMEZONE))
@@ -241,10 +243,12 @@ async def start(client, message):
                     InlineKeyboardButton('• ᴛʀᴇɴᴅɪɴɢ •', callback_data='trending'),
                     InlineKeyboardButton('• ʀᴇꜰᴇʀ •', callback_data='reffff'),
                     InlineKeyboardButton('• ᴍᴏꜱᴛ ꜱᴇᴀʀᴄʜ •', callback_data='mostsearch')
-                  ],[
+                ],[
+                    InlineKeyboardButton('• ᴊᴏɪɴ ᴏᴜʀ ᴀʟʟ ᴄʜᴀɴɴᴇʟꜱ ᴀɴᴅ ɢʀᴏᴜᴘ •', callback_data='channels')
+                ],[
                     InlineKeyboardButton('• ᴘʀᴇᴍɪᴜᴍ •', callback_data='seeplans'),
                     InlineKeyboardButton('• ᴀʙᴏᴜᴛ •', callback_data='about')
-                  ]]
+                ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         current_time = datetime.now(pytz.timezone(TIMEZONE))
         curr_time = current_time.hour        
