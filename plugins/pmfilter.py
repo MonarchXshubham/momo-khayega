@@ -1512,16 +1512,29 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":
         buttons = [[
-                    InlineKeyboardButton('☆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ☆', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('🏡', callback_data="start"),
+                    InlineKeyboardButton('💳', callback_data='reffff'),
+                    InlineKeyboardButton('🎫', callback_data='seeplans'),
+                    InlineKeyboardButton('💸', callback_data='shortlink_info'),
+                    InlineKeyboardButton('🖥', callback_data='help'),
+                    InlineKeyboardButton('🌚', callback_data='about'),
+                    InlineKeyboardButton('🔥', callback_data='mostsearch'),
+                    InlineKeyboardButton('⚡️', callback_data='trending')
+                ],
+                [
+                    InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('⚠️ Help ', callback_data='help'),
-                    InlineKeyboardButton('🔰 ᴀʙᴏᴜᴛ ', callback_data='about')
+                    InlineKeyboardButton('• ᴇᴀʀɴ ᴍᴏɴᴇʏ •', callback_data="shortlink_info"),
+                    InlineKeyboardButton('• ᴄᴏᴍᴍᴀɴᴅꜱ •', callback_data='help')
                 ],[
-                    InlineKeyboardButton('Premium 🔓', callback_data="seeplans"),
-                    InlineKeyboardButton('Refer ⚜️', callback_data="reffff")
+                    InlineKeyboardButton('• ᴛʀᴇɴᴅɪɴɢ •', callback_data='trending'),
+                    InlineKeyboardButton('• ʀᴇꜰᴇʀ •', callback_data='reffff'),
+                    InlineKeyboardButton('• ᴍᴏꜱᴛ ꜱᴇᴀʀᴄʜ •', callback_data='mostsearch')
                 ],[
-                    InlineKeyboardButton('🔍 Most Search', callback_data="mostsearch"),
-                    InlineKeyboardButton('⚡ Top Trending', callback_data="trending")
+                    InlineKeyboardButton('• ᴊᴏɪɴ ᴏᴜʀ ᴀʟʟ ᴄʜᴀɴɴᴇʟꜱ ᴀɴᴅ ɢʀᴏᴜᴘ •', callback_data='channels')
+                ],[
+                    InlineKeyboardButton('• ᴘʀᴇᴍɪᴜᴍ •', callback_data='seeplans'),
+                    InlineKeyboardButton('• ᴀʙᴏᴜᴛ •', callback_data='about')
                 ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
